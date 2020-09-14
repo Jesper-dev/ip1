@@ -36,7 +36,7 @@ ul{
     min-height: 100%;
 }
 
-li, a{
+ul li, a{
     display: inline-block;
     text-decoration: none;
     font-size: 16px;
@@ -49,7 +49,7 @@ li, a{
     
 }
 
-a:hover{
+ul a:hover{
     color: #dadada;
 }
 
@@ -80,7 +80,6 @@ header h1{
 .bottle{
     max-height: 300px;
     max-width: 368px;
-    
 }
 
 .info{
@@ -89,4 +88,40 @@ header h1{
     max-width: 30%;
     padding: 10px;
     font-size: 20px;
+}
+
+footer{
+    
+    /* This placed the footer at the bottom of the page (Where it belongs) */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    max-height: 20%;
+    width: 100%;
+    background-color: #a19c9a;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100px;
+    flex-wrap: wrap;
+}
+
+.title-f{
+    font-size: 18px;
+    padding: 0;
+}
+
+.mail{
+    color: black;
+    font-size: 16px;
+    padding: 0;
+}
+.mail:hover{
+    color: white;
 }
