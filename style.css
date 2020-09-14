@@ -12,16 +12,10 @@ body{
 
 
 /*=============================================
-=            NAV style incoming            =
+=            Start of Nav Era            =
 =============================================*/
 
 nav{
-    
-    
-    
-
-    /* border: 1px solid black; */
-   
     max-width: 100%;
     min-height: 100%;
 }
@@ -33,6 +27,7 @@ ul{
     justify-content: center;
     align-items: center;
     flex: 1 1 100px;
+    flex-wrap: wrap;
     /* Flex shiat */
     list-style: none;
     padding: 0;
@@ -54,11 +49,44 @@ li, a{
     
 }
 
-
 a:hover{
     color: #dadada;
 }
 
 /*=============================================
-=            NAV style endning            =
+=               End of Nav Era                =
 =============================================*/
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 200px;
+}
+
+header h1{
+    text-decoration: underline;
+}
+
+.flex-c{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 368px;
+    flex-wrap: wrap;  
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.bottle{
+    max-height: 300px;
+    max-width: 368px;
+    
+}
+
+.info{
+    justify-self: flex-end;
+    align-self: center;
+    max-width: 30%;
+    padding: 10px;
+    font-size: 20px;
+}
