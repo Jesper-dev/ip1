@@ -1,3 +1,7 @@
+/* *{
+    border: 1px solid black;
+} */
+
 body{
     max-width: 100%;
     max-height: 100%;
@@ -21,7 +25,7 @@ nav{
 }
 
 
-ul{
+.main-ul{
     /* Flex shiat */
     display: flex;
     justify-content: center;
@@ -36,7 +40,7 @@ ul{
     min-height: 100%;
 }
 
-ul li, a{
+.main-ul li, a{
     display: inline-block;
     text-decoration: none;
     font-size: 16px;
@@ -50,8 +54,12 @@ ul li, a{
     
 }
 
-ul a:hover{
+.main-ul a:hover{
     color: #dadada;
+}
+
+a:target{
+    color: white;
 }
 
 /*=============================================
@@ -82,7 +90,7 @@ header h1{
     max-height: 300px;
     max-width: 368px;
 
-    animation: fadeIn ease 1s;
+    animation: fadeIn ease 2s;
 }
 
 @keyframes fadeIn {
@@ -100,6 +108,7 @@ header h1{
     max-width: 30%;
     padding: 10px;
     font-size: 20px;
+    animation: fadeIn ease 2s;
 }
 
 footer{
@@ -137,3 +146,54 @@ footer{
 .mail:hover{
     color: white;
 }
+
+
+/*=============================================
+=            Contact form css incoming       =
+                (Brace yourself)             =
+=============================================*/
+
+.form-container{
+    max-width: 20%;
+    margin: 0 auto;
+
+    background-color: white;
+}
+
+
+
+.flex-container-contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.flex-container-contact > li{
+    list-style: none;
+    padding: 0;
+}
+
+
+/* Chooses the label inside the li inside the form control (ul) */
+.flex-container-contact > li > label{
+    flex: 1 1 120px;
+    max-width: 200px;
+    
+}
+
+.flex-container-contact > li > input{
+    padding: 10px;
+}
+
+.flex-container-contact li button {
+   
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    border-radius: 2px;
+  }

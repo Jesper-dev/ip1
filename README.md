@@ -8,5 +8,8 @@ LETS GO!
 Colors i used:
 background-color: #757170;
 
+Contact form reference:
+https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767
+
 NAV youtube videos i used:
 https://www.youtube.com/watch?v=PwWHL3RyQgk&ab_channel=Skillthrive
