@@ -13,10 +13,14 @@ body{
     margin: 0;
 }
 
-
+main{
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 /*=============================================
-=            Start of Nav Era            =
+=            Start of Nav Era                =
 =============================================*/
 
 nav{
@@ -135,7 +139,7 @@ footer{
 
 .title-f{
     font-size: 18px;
-    padding: 0;
+    padding-left: 5px;
 }
 
 .mail{
@@ -147,53 +151,86 @@ footer{
     color: white;
 }
 
+.fas{
+    padding-left: 5px;
+}
 
 /*=============================================
 =            Contact form css incoming       =
                 (Brace yourself)             =
 =============================================*/
 
-.form-container{
-    max-width: 20%;
-    margin: 0 auto;
+*:focus {
+    outline: none;
+}
 
-    background-color: white;
+.contact-form{
+    margin:0px;
+    padding:0px;
+}
+
+.contact-form li:first-child, .contact-form li:last-child {
+    border-bottom:1px solid rgb(0, 0, 0);
+}
+
+
+.contact-form h3 {
+    margin: 0;
+    display: inline;
 }
 
 
 
-.flex-container-contact{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
+
+.contact-form ul{
+    width:750px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
 }
 
-.flex-container-contact > li{
-    list-style: none;
-    padding: 0;
+.contact-form li{
+    padding:12px; 
+    position:relative;
 }
 
-
-/* Chooses the label inside the li inside the form control (ul) */
-.flex-container-contact > li > label{
-    flex: 1 1 120px;
-    max-width: 200px;
+.contact-form label{
     
+    width:150px;
+    margin-top: 3px;
+    
+    float:left;
+    padding:3px;
 }
 
-.flex-container-contact > li > input{
-    padding: 10px;
+.contact-form input{
+    padding: 7px;
+    height:20px; 
+    width:220px; 
+    padding:5px 8px;
+
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
 }
 
-.flex-container-contact li button {
-   
-    padding: 8px 16px;
-    border: none;
-    background: #333;
-    color: #f2f2f2;
-    text-transform: uppercase;
-    border-radius: 2px;
-  }
+.contact-form textarea {
+    padding:8px; width:300px;
+
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+.contact-form button {
+    margin-left:156px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background: #fff; 
+    border:1px solid #555; 
+    box-shadow: 0 0 3px #aaa; 
+
+    padding-right:70px;
+    transition: padding .25s;
+}
