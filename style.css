@@ -179,9 +179,6 @@ footer{
     display: inline;
 }
 
-
-
-
 .contact-form ul{
     width:750px;
     list-style-type:none;
@@ -222,15 +219,51 @@ footer{
     box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
     border-radius:2px;
 }
-.contact-form button {
+
+.submit {
+    /* style for the button */
     margin-left:156px;
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    border: 0.16em solid #ffffff;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.15s;  
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
+.submit:hover{
+    color: #dddddd;
+    border-color: #dddddd;
+}
+
+.submit:active{
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+.contact-form input:hover, .contact-form textarea:hover {
     background: #fff; 
     border:1px solid #555; 
     box-shadow: 0 0 3px #aaa; 
 
     padding-right:70px;
-    transition: padding .25s;
+    transition: padding .50s;
+}
+
+.bouncy{
+    animation:bouncy 5s infinite linear;
+    position:relative;
+}
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
 }

@@ -14,3 +14,6 @@ https://webdesign.tutsplus.com/tutorials/bring-your-forms-up-to-date-with-css3-a
 
 NAV youtube videos i used:
 https://www.youtube.com/watch?v=PwWHL3RyQgk&ab_channel=Skillthrive
+
+Button inspiration:
+https://fdossena.com/?p=html5cool/buttons/i.frag
