@@ -5,38 +5,46 @@ const form = document.querySelector("form"); //To access form
 const email = document.querySelector("#email");
 const emailError = document.querySelector(".error");
 
+const result  = document.querySelector(".result");
+
 //Event listener
 email.addEventListener("input", () =>{
-    //Each time the user types we check if the form are valud, thanks to "input" in the event listener
+    //Each time the user types we check if the form are valid, thanks to "input" in the event listener
    if(email.validity.valid){
-       //If email is valid we remove the error message
-    //    emailError.innerHTML = "";
-       emailError.setAttribute = "class", ".success";
-    //    emailError. className = "error active"
+       //If email is valid we remove the error class and add the success class
+    
+       emailError.classList.remove("error");
+       emailError.classList.add("success");
+       emailError.textContent = "This email is valid!";
 
-       emailError.textContent = "Valid";
+       //If the email is not valid we do the showError function
    }else{
        showError();
    }
 });
 
+//On submit, if the email is not valid we do not send the form and we show error
 form.addEventListener("submit", (e) => {
     if(!email.validity.valid){
-        showError();
         e.preventDefault();
+        showError();
+        
+    }else{
+        e.preventDefault();
+        result.classList.add("success2");
+        result.textContent = "Success! We will read your message as fast we can.";
     }
 });
 
+//Shows the differecnt types of errors
 function showError(){
     if(email.validity.valueMissing){
         emailError.textContent = "You need to enter an email address."
     }else if(email.validity.typeMismatch){
-        emailError.textContent = "Entered value needs to be an email adress"
+        emailError.textContent = "This is not valid"
     }else if(email.validity.tooShort){
-        emailError.textContent = `Email should be atleast ${email.minLength}.`
+        emailError.textContent = `Email should be atleast ${email.minLength} characters long.`
     }
 
     emailError.className = "error active"
 }
-
-console.log(emailError);

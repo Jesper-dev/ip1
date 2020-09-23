@@ -206,7 +206,7 @@ footer{
     padding:3px;
 }
 
-.contact-form input{
+.style{
     padding: 7px;
     height:20px; 
     width:220px; 
@@ -225,32 +225,7 @@ footer{
     border-radius:2px;
 }
 
-.submit {
-    /* style for the button */
-    margin-left:156px;
-    display: inline-block;
-    padding: 0.3em 1.2em;
-    border: 0.16em solid #ffffff;
-    box-sizing: border-box;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    transition: all 0.15s;  
-}
-
-.submit:hover{
-    color: #dddddd;
-    border-color: #dddddd;
-}
-
-.submit:active{
-    color: #BBBBBB;
-    border-color: #BBBBBB;
-}
-
-.contact-form input:hover, .contact-form textarea:hover {
+.style:hover, .contact-form textarea:hover {
     background: #fff; 
     border:1px solid #555; 
     box-shadow: 0 0 3px #aaa; 
@@ -259,9 +234,28 @@ footer{
     transition: padding .50s;
 }
 
+/* style for the button */
+.submit {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 10px;
+    left: 155px;
+    width: 90px;
+    box-sizing: border-box;
+}
+
+.submit:hover{
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
 .bouncy{
     animation:bouncy 5s infinite linear;
-    position:relative;
+    position: relative;
 }
 @keyframes bouncy {
     0%{top:0em}
@@ -274,13 +268,14 @@ footer{
 }
 
 
+/* Style for success message */
 .success{
     width  : 100%;
     padding: 0;
-    font-size: 80%;
-    color: green;
+    font-size: 15px;
+    color: white;
     background-color: rgb(0, 153, 8);
-    border-radius: 0 0 5px 5px;
+    border-radius: 2px;
     box-sizing: border-box;
 }
 
@@ -288,14 +283,34 @@ footer{
 .error {
     width  : 100%;
     padding: 0;
-    font-size: 80%;
+    font-size: 15px;
     color: white;
     background-color: #900;
-    border-radius: 0 0 5px 5px;
+    border-radius: 2px;
     box-sizing: border-box;
   }
   
-  .error.active {
-    padding: 0.3em;
-  }
+ 
 
+
+/* Styles for after submit text */
+.success2{
+    width: 50%;
+    padding: 0;
+    font: 15px;
+    color: white;
+    background-color: rgb(0, 153, 8);
+    box-sizing: border-box;
+    border: 1px solid black;
+    left: 155px;
+}
+
+.error2{
+    width: 50%;
+    padding: 0;
+    font: 15px;
+    color: white;
+    background-color: #900;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
