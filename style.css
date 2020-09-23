@@ -11,6 +11,11 @@ body{
 
     padding: 0;
     margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100px;
+    flex-wrap: wrap;
 }
 
 main{
@@ -267,3 +272,30 @@ footer{
     50%{top:0em}
     100%{top:0em;}
 }
+
+
+.success{
+    width  : 100%;
+    padding: 0;
+    font-size: 80%;
+    color: green;
+    background-color: rgb(0, 153, 8);
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+/* Style for error message */
+.error {
+    width  : 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
+

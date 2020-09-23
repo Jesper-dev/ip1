@@ -8,6 +8,7 @@
     <!-- Links incoming -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <nav>   
@@ -32,7 +33,8 @@
   
             <li>
               <label for="email">Email:</label>
-              <input type="email" id="email" placeholder="john-doe@example.com">
+              <input type="email" id="email" placeholder="john-doe@example.com" required minlength="8">
+              <span class="error"></span>
             </li>
   
             <li>
@@ -46,6 +48,7 @@
           </ul>
 
       </form> 
+
 </main>
     
 <footer>

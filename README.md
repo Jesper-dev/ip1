@@ -17,3 +17,6 @@ https://www.youtube.com/watch?v=PwWHL3RyQgk&ab_channel=Skillthrive
 
 Button inspiration:
 https://fdossena.com/?p=html5cool/buttons/i.frag
+
+Tips for validation:
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
