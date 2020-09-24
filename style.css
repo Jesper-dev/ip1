@@ -1,6 +1,6 @@
-/* *{
+*{
     border: 1px solid black;
-} */
+}
 
 body{
     max-width: 100%;
@@ -22,7 +22,10 @@ main{
     max-height: 100%;
     display: flex;
     justify-content: center;
+    flex: 1 1 100px;
+    flex-wrap: wrap;
 }
+
 
 /*=============================================
 =            Start of Nav Era                =
@@ -70,10 +73,6 @@ nav{
     text-decoration: underline;
 }
 
-.main-ul:first-child{
-    justify-self: flex-start;
-}
-
 /*=============================================
 =               End of Nav Era                =
 =============================================*/
@@ -109,13 +108,15 @@ header h1{
   }
 
 .info{
-    justify-self: flex-end;
+   
     align-self: center;
     max-width: 30%;
     padding: 10px;
     font-size: 20px;
     animation: fadeIn ease 2s;
 }
+
+
 
 footer{
     
@@ -310,4 +311,77 @@ footer{
     background-color: #900;
     box-sizing: border-box;
     border: 1px solid black;
+}
+
+
+/*=============================================
+=            Media incoming                  =
+=============================================*/
+
+
+@media only screen and (max-width: 800px){
+    nav{
+        max-width: 100%;
+        min-height: 100%;
+    }
+    
+    
+    .main-ul{
+        /* Flex shiat */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 100px;
+        flex-wrap: wrap;
+        /* Flex shiat */
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .main-ul li, a{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        color: #000000;
+        padding: 10px;
+        letter-spacing: 1.1px;
+        
+        /* Adds a cool ease transition.. wow. */
+        transition: all 0.5s ease 0s;
+    
+        
+    }
+    
+
+    .flex-c{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 368px;
+        flex-wrap: wrap;  
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    .bottle{
+        max-height: 250px;
+        max-width: 200px;
+    
+        animation: fadeIn ease 2s;
+    }
+
+    .info{
+      
+        align-self: center;
+        max-width: 50%;
+        max-height: 100%;
+        /* padding: 10px; */
+        font-size: 15px;
+        animation: fadeIn ease 2s;
+    }
 }
