@@ -136,11 +136,28 @@ section{
     box-sizing: border-box;
 }
 
-.reviews{
+.middle-content{
     width: 100%;
     background:  #ac8080;
     box-sizing: border-box;
-   
+}
+
+.middle-info{
+    width: 40%;
+    padding: 10px;
+    margin-left: 5%;
+    margin-bottom: 7%;
+}
+
+.middle-info h3 {
+    color: #ffff;
+    text-decoration: underline;
+    text-shadow: 1px 1px #000000;
+}
+
+.middle-info p{
+    color: #ffff;
+    text-shadow: 1px 1px #000000;
 }
 
 .flex-re{
@@ -155,40 +172,40 @@ section{
 
 .re1{
     width: 10%;
-    color: #ffffff;
+    color: #ffff;
     align-self: flex-end;
     margin-right: 12%;
-
+    text-shadow: 1px 1px #000000;
     animation: fadeIn ease 5s;
 }
 .re2{
     width: 10%;
-    color: #ffffff;
+    color: #ffff;
     margin-right: 7%;
-
+    text-shadow: 1px 1px #000000;
     animation: fadeIn ease 7s;
 }
 
 .re3{
     width: 10%;
-    color: #ffffff;
+    color: #ffff;
     align-self: flex-start;
     margin-left: 10%;
-
+    text-shadow: 1px 1px #000000;
     animation: fadeIn ease 9s;
 }
 .re4{
     width: 10%;
-    color: #ffffff;
+    color: #ffff;
     margin-left: 35%;
-
+    text-shadow: 1px 1px #000000;
     animation: fadeIn ease 11s;
 }
 .re5{
     width: 10%;
-    color: #ffffff;
+    color: #ffff;
     margin-right: 20%;
-
+    text-shadow: 1px 1px #000000;
     animation: fadeIn ease 13s;
 }
 
