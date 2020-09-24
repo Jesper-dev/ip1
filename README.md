@@ -5,8 +5,11 @@ A site about an awesome shampoo. This site is not serious, its only purpose is t
 
 LETS GO!
 
+Note: This readme is mostly for me so i can remeber which colors i used incase i change and want to change back to these colors.
+
 Colors i used:
-background-color: #757170;
+background-color:  #cacaca;
+background for section: #ac8080;
 
 Contact form reference:
 https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767
