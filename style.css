@@ -5,7 +5,7 @@
 body{
     max-width: 100%;
     height: 100%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #cacaca;
     box-sizing: border-box;
 
@@ -229,46 +229,78 @@ footer{
     width: 100%;
     padding: 0;
     margin: 0;
+    border-top: 1px solid black;
+    background: #202020;
     
 }
 
-.footer-content{
-    border-top: 1px solid black; 
+.footer-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   
+    width: 100%;
+}
+
+.footer-first{
     display: flex;
     flex-flow: column nowrap;
-    flex: 1 1 100px;
-    padding-left: 20px;
+    align-items: flex-end;
+    color: #414141;
+    width: 25%;
+}
+
+.footer-first-links{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    color: #ffff;
+    width: 100%;
+}
+
+.footer-first-links a{
+    color: #ffff;
+}
+
+.footer-first h3{
+    align-self: center;
+    color: #ffff;
+}
+
+.footer-second{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    color: #ffff;
+    width: 25%;
+    font-size: 14px;
+}
+
+.footer-second i{
+    padding: 0px 15px;
+}
+
+.footer-second a{
+    color: #ffff;
+}
+
+.footer-third{
+    display: flex;
+    flex-flow: column nowrap;
+    color: #414141;
+    width: 25%;
+    color: #ffff;
+}
+
+.footer-third h3{
+    padding-top: 30px;
     margin: 0;
 }
 
-.about-footer{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    max-width: 300px;
-    margin: 0%;
-    padding: 0%;
+.footer-third p{
+    width: 240px;
 }
-
-.about-footer h4{
-    padding-right: 15px;
-}
-
-.about-footer a{
-    margin-top: 6px;
-    /* border-left: 1px solid black; */
-    font-size: 1rem;
-}
-
-.contact-footer{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    max-width: 500px;
-    margin: 0%;
-    padding: 0%;
-}
-
 
 /*=============================================
 =            Contact form css incoming       =
@@ -668,48 +700,93 @@ footer{
 
     .content-wrap{
         /* Give padding bottom the same value as the height of the footer */
-        padding-bottom: 100px;
+        padding-bottom: 20%;
     }
 
-
-    /* Here comes the bottom of the page */
-    footer{
+    footer{ 
         /* This placed the footer at the bottom of the page (Where it belongs) */
-        position: absolute;
+        /* For mobile it worked to give position relative instaed of absolute to make the footer not cover any content */
+        /* So position absolute for pc and position relative for mobile */
+        position: relative;
         bottom: 0%;
         /* If you change this you must change the padding bottom at .content-wrap */
         max-height: 20%;
         width: 100%;
-        background-color: #a19c9a;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid black;
+        background: #202020;
+        
+    }
+
+    .footer-wrapper{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-first{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        color: #414141;
+        width: 100%;
     }
     
-    .flex-footer{
+    .footer-first-links{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        color: #ffff;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    
+    .footer-first-links a{
+        color: #ffff;
+        
+    }
+    
+    .footer-first h3{
+        align-self: center;
+        color: #ffff;
+    }
+    
+    .footer-second{
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        justify-content: center;
-        flex: 1 1 100px;
+        justify-content: flex-start;
+        color: #ffff;
+        width: 100%;
+        font-size: 15px;
     }
     
-    .flex-footer h5{
-        padding: 0;
-        margin: 0;
-    }
-
-    .flex-footer p{
-        font-size: 12px;
-        padding: 0;
-        margin: 0;
-    }
-
-    .title-f{
-        font-size: 16px;
-        padding-left: 5px;
+    .footer-second i{
+        padding: 0px 15px;
     }
     
-    .mail{
-        color: black;
-        font-size: 12px;
-        padding: 0;
+    .footer-second a{
+        color: #ffff;
+    }
+    
+    .footer-third{
+        display: flex;
+        flex-flow: column nowrap;
+        color: #414141;
+        width: 100%;
+        color: #ffff;
+       
+        align-items: center;
+    }
+    
+    .footer-third h3{
+        margin: 0;
+    }
+    
+    .footer-third p{
+        width: 240px;
     }
 }
