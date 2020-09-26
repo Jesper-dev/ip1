@@ -227,15 +227,47 @@ footer{
     /* If you change this you must change the padding bottom at .content-wrap */
     max-height: 20%;
     width: 100%;
-    border-top: 1px solid black; 
+    padding: 0;
+    margin: 0;
+    
 }
 
 .footer-content{
+    border-top: 1px solid black; 
     display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 100px;
+    padding-left: 20px;
+    margin: 0;
 }
 
+.about-footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    max-width: 300px;
+    margin: 0%;
+    padding: 0%;
+}
 
+.about-footer h4{
+    padding-right: 15px;
+}
 
+.about-footer a{
+    margin-top: 6px;
+    /* border-left: 1px solid black; */
+    font-size: 1rem;
+}
+
+.contact-footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0%;
+    padding: 0%;
+}
 
 
 /*=============================================
