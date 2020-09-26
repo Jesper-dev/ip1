@@ -160,6 +160,8 @@ section{
     text-shadow: 1px 1px #000000;
 }
 
+
+/* The reviews in the middle of the page */
 .flex-re{
     display: flex;
     flex-direction: column;
@@ -253,7 +255,7 @@ footer{
 
 /*=============================================
 =            Contact form css incoming       =
-                (Brace yourself)             =
+=               (Brace yourself)             =
 =============================================*/
 
 *:focus {
@@ -412,6 +414,77 @@ footer{
 =============================================*/
 
 
+
+/*=============================================
+=            Max width 1360px                 =
+=============================================*/
+
+@media only screen and (max-width: 1360px){
+    .info{
+      
+        align-self: center;
+        max-width: 40%;
+        max-height: 80%;
+        /* padding: 10px; */
+        font-size: 15px;
+        animation: fadeIn ease 2s;
+    }
+
+    .bottle{
+        max-height: 230px;
+        max-width: 180px;
+    
+        animation: fadeIn ease 2s;
+    }
+
+      /* Reviews */
+      .re1{
+        width: 200px;  
+        color: #ffff;
+        align-self: flex-end;
+        margin-right: 12%;
+        text-shadow: 1px 1px #000000;
+        animation: fadeIn ease 5s;
+        font-size: 15px;
+    }
+    .re2{
+        width: 200px;     
+        color: #ffff;
+        margin-right: 7%;
+        text-shadow: 1px 1px #000000;
+        animation: fadeIn ease 7s;
+    }
+    
+    .re3{ 
+        width: 200px;  
+        color: #ffff;
+        align-self: flex-start;
+        margin-left: 10%;
+        text-shadow: 1px 1px #000000;
+        animation: fadeIn ease 9s;
+    }
+    .re4{ 
+        width: 200px;    
+        color: #ffff;
+        margin-left: 35%;
+        text-shadow: 1px 1px #000000;
+        animation: fadeIn ease 11s;
+    }
+    .re5{
+        width: 200px; 
+        color: #ffff;
+        margin-right: 20%;
+        text-shadow: 1px 1px #000000;
+        animation: fadeIn ease 13s;
+    }
+}
+
+
+
+/*=============================================
+=            Max width 800px                 =
+=============================================*/
+
 @media only screen and (max-width: 800px){
     nav{
         max-width: 100%;
@@ -468,13 +541,67 @@ footer{
         animation: fadeIn ease 2s;
     }
 
-    .info{
-      
+    .info{  
         align-self: center;
         max-width: 50%;
         max-height: 100%;
         /* padding: 10px; */
         font-size: 15px;
         animation: fadeIn ease 2s;
+    }
+}
+
+
+/*=============================================
+=                 For mobile                 =
+=============================================*/
+
+
+@media only screen and (max-width: 500px){
+    .bottle{
+        max-height: 250px;
+        max-width: 200px;
+    
+        animation: fadeIn ease 2s;
+    }
+
+    .info{  
+        align-self: center;
+        max-width: 80%;
+        max-height: 80%;
+        /* padding: 10px; */
+        font-size: 17px;
+        animation: fadeIn ease 2s;
+    }
+
+    .middle-info{
+        width: 80%;
+        margin-bottom: 7%;
+        font-size: 17px;
+    }
+
+    /* This is for the footer, to keep it at the bottom where it belongs */
+    .page-container{
+        position: relative;
+        min-height: 100vh;
+    }
+
+
+    .content-wrap{
+        /* Give padding bottom the same value as the height of the footer */
+        padding-bottom: 100px;
+    }
+
+    footer{
+    
+        /* This placed the footer at the bottom of the page (Where it belongs) */
+        position: absolute;
+        box-sizing: border-box;
+        bottom: 0%;
+        /* If you change this you must change the padding bottom at .content-wrap */
+        max-height: 100px;
+        width: 100%;
+        background-color: #a19c9a;
+        
     }
 }
