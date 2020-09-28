@@ -51,10 +51,10 @@ nav{
 
 /* To change current link, add some JS magic ;) */
 .current-link{
-    color: #ffffff;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: underline;
+    color: #ffffff !important; 
+    font-size: 18px !important;
+    text-transform: uppercase !important;
+    text-decoration: underline !important;
 }
 
 .main-ul{
@@ -72,7 +72,7 @@ nav{
     min-height: 100%;
 }
 
-.main-ul li, a{
+.main-ul li{
     display: inline-block;
     text-decoration: none;
     font-size: 16px;
@@ -82,8 +82,18 @@ nav{
     
     /* Adds a cool ease transition.. wow. */
     transition: all 0.5s ease 0s;
+}
 
+.link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    padding: 15px;
+    letter-spacing: 1.1px;
     
+    /* Adds a cool ease transition.. wow. */
+    transition: all 0.5s ease 0s;
 }
 
 .main-ul a:hover{
@@ -267,8 +277,15 @@ footer{
     width: 100%;
 }
 
+
+
 .footer-first-links a{
     color: #ffff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+    letter-spacing: 1.1px;
 }
 
 .footer-first h3{
@@ -292,6 +309,12 @@ footer{
 
 .footer-second a{
     color: #ffff;
+    color: #ffff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+    letter-spacing: 1.1px;
 }
 
 .footer-third{

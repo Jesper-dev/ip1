@@ -8,7 +8,7 @@ const emailError = document.querySelector(".error");
 const result  = document.querySelector(".result");
 
 //Event listener
-email.addEventListener("input", () =>{
+email.addEventListener("keyup", () =>{
     //Each time the user types we check if the form are valid, thanks to "input" in the event listener
    if(email.validity.valid){
        //If email is valid we remove the error class and add the success class
