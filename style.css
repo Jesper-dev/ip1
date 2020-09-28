@@ -38,6 +38,8 @@ main{
     padding-bottom: 20%;
 }
 
+
+
 /*=============================================
 =            Start of Nav Era                =
 =============================================*/
@@ -47,6 +49,13 @@ nav{
     min-height: 100%;
 }
 
+/* To change current link, add some JS magic ;) */
+.current-link{
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
 
 .main-ul{
     /* Flex shiat */

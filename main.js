@@ -48,3 +48,6 @@ function showError(){
 
     emailError.className = "error active"
 }
+
+
+//Link Stuff
