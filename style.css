@@ -49,13 +49,7 @@ nav{
     min-height: 100%;
 }
 
-/* To change current link, add some JS magic ;) */
-.current-link{
-    color: #ffffff !important; 
-    font-size: 18px !important;
-    text-transform: uppercase !important;
-    text-decoration: underline !important;
-}
+
 
 .main-ul{
     /* Flex shiat */
@@ -94,6 +88,14 @@ nav{
     
     /* Adds a cool ease transition.. wow. */
     transition: all 0.5s ease 0s;
+}
+
+/* To change current link, add some JS magic ;) */
+.current-link{
+    color: #000000; 
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .main-ul a:hover{
