@@ -3,7 +3,7 @@
 } */
 
 body{
-    max-width: 100%;
+    max-width: 100vw;
     height: 100%;
     font-family: 'Raleway', sans-serif;
     background-color: #cacaca;
@@ -30,7 +30,7 @@ main{
 /* This is for the footer, to keep it at the bottom where it belongs */
 .page-container{
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 .content-wrap{
@@ -238,6 +238,20 @@ section{
 
 
 /*=============================================
+=             Style for about.html            =
+=============================================*/
+
+.welcome{
+    width: 50%;
+}
+
+.welcome h2{
+    text-align: center;
+}
+
+
+
+/*=============================================
 =      Footer incoming, brace yourself lad    =
 =============================================*/
 
@@ -247,7 +261,7 @@ footer{
     bottom: 0%;
     /* If you change this you must change the padding bottom at .content-wrap */
     max-height: 20%;
-    width: 100%;
+    width: 99%;
     padding: 0;
     margin: 0;
     border-top: 1px solid black;
@@ -261,6 +275,10 @@ footer{
     justify-content: space-between;
    
     width: 100%;
+}
+
+.footer-wrapper a:hover{
+    text-decoration: underline;
 }
 
 .footer-first{
@@ -290,6 +308,7 @@ footer{
     letter-spacing: 1.1px;
 }
 
+
 .footer-first h3{
     align-self: center;
     color: #ffff;
@@ -318,6 +337,8 @@ footer{
     padding: 15px;
     letter-spacing: 1.1px;
 }
+
+
 
 .footer-third{
     display: flex;
@@ -724,6 +745,16 @@ footer{
         animation: fadeIn ease 13s;
     }
 
+
+    /* about.html page */
+    .welcome{
+        width: 90%;
+        height: 500px;
+    }
+    
+    .welcome h2{
+        text-align: center;
+    }
 
     /* This is for the footer, to keep it at the bottom where it belongs */
     .page-container{
