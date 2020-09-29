@@ -536,45 +536,22 @@ footer{
         animation: fadeIn ease 2s;
     }
 
-      /* Reviews */
-      .re1{
-        width: 200px;  
-        color: #ffff;
-        align-self: flex-end;
-        margin-right: 12%;
-        text-shadow: 1px 1px #000000;
-        animation: fadeIn ease 5s;
-        font-size: 15px;
+    /* Reviews */
+    .re1{
+        width: 200px;     
     }
     .re2{
-        width: 200px;     
-        color: #ffff;
-        margin-right: 7%;
-        text-shadow: 1px 1px #000000;
-        animation: fadeIn ease 7s;
+        width: 200px;         
     }
     
     .re3{ 
-        width: 200px;  
-        color: #ffff;
-        align-self: flex-start;
-        margin-left: 10%;
-        text-shadow: 1px 1px #000000;
-        animation: fadeIn ease 9s;
+        width: 200px;       
     }
     .re4{ 
-        width: 200px;    
-        color: #ffff;
-        margin-left: 35%;
-        text-shadow: 1px 1px #000000;
-        animation: fadeIn ease 11s;
+        width: 200px;        
     }
     .re5{
         width: 200px; 
-        color: #ffff;
-        margin-right: 20%;
-        text-shadow: 1px 1px #000000;
-        animation: fadeIn ease 13s;
     }
 }
 
@@ -590,70 +567,29 @@ footer{
         min-height: 100%;
     }
     
-    
-    .main-ul{
-        /* Flex shiat */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1 1 100px;
-        flex-wrap: wrap;
-        /* Flex shiat */
-
-        list-style: none;
-        padding: 0;
-        margin-top: 0;
-        min-width: 100%;
-        min-height: 100%;
-    }
-    
     .main-ul li, a{
-        display: inline-block;
-        text-decoration: none;
-        font-size: 16px;
-        color: #000000;
-        padding: 10px;
-        letter-spacing: 1.1px;
-        
-        /* Adds a cool ease transition.. wow. */
-        transition: all 0.5s ease 0s;
-    
-        
+        padding: 10px;       
     }
     
 
     .flex-c{
-        display: flex;
         flex-flow: column-reverse wrap;
-        justify-content: center;
-        align-items: center;
-        flex: 1 1 368px;  
+        align-items: center; 
         max-width: 100%;
-        max-height: 100%;
-        margin: 0 auto;
     }
 
     .bottle{
         max-height: 250px;
-        max-width: 200px;
-    
         animation: fadeIn ease 2s;
     }
 
     .info{  
-        align-self: center;
         max-width: 50%;
-        max-height: 100%;
-        /* padding: 10px; */
-        font-size: 15px;
         animation: fadeIn ease 2s;
     }
 
     .middle-info{
         width: 70%;
-        padding: 10px;
-        margin-left: 5%;
-        margin-bottom: 7%;
     }
 }
 
@@ -663,82 +599,39 @@ footer{
 =============================================*/
 
 @media only screen and (max-width: 500px){
-    .bottle{
-        max-height: 250px;
-        max-width: 200px;
-    
-        animation: fadeIn ease 2s;
-    }
 
-    .info{  
-        align-self: center;
-        max-width: 80%;
-        max-height: 80%;
-        font-size: 17px;
-        animation: fadeIn ease 2s;
+    .info{        
+        max-width: 80%;     
+        font-size: 17px;       
     }
 
     .middle-info{
         width: 80%;
-        margin-bottom: 7%;
-        font-size: 17px;
     }
-
-    /* The reviews in the middle of the page */
-    .flex-re{
-        display: flex;
-        flex-flow: column wrap;
-        /* align-items: center; */
-        flex: 1 1 100px;
-        padding: 15px 15px;
-    }
-
 
     .re1{
-        font-size: 1rem;
-        width: 200px;
-        color: #ffff;
         align-self: center;
-        margin-right: 12%;
-        text-shadow: 1px 1px #000000;
-        animation: fadeIn ease 5s;
-    }
-    .re2{
-        font-size: 1rem;
-        width: 200px;
-        color: #ffff;
-        align-self: center;
-        margin-right: 7%;
-        text-shadow: 1px 1px #000000;
-        animation: fadeIn ease 7s;
+        margin: 0;    
     }
     
+    .re2{
+        align-self: center;
+        margin: 0;  
+    }
+
     .re3{
-        font-size: 1rem;
-        width: 200px;
-        color: #ffff;
         align-self: center;
-        margin-left: 10%;
-        text-shadow: 1px 1px #000000;
-        animation: fadeIn ease 9s;
+        margin: 0;
     }
-    .re4{
-        font-size: 1rem;
-        width: 200px;
-        color: #ffff;
+
+    .re4{    
         align-self: center;
-        margin-left: 35%;
-        text-shadow: 1px 1px #000000;
-        animation: fadeIn ease 11s;
+        margin: 0;      
     }
+
     .re5{
-        font-size: 1rem;
-        width: 200px;
-        color: #ffff;
         align-self: center;
-        margin-right: 20%;
-        text-shadow: 1px 1px #000000;
-        animation: fadeIn ease 13s;
+        margin-right: 0;
     }
 
     /* Contact.html page */
