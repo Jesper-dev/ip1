@@ -7,7 +7,7 @@ const emailError = document.querySelector(".error");
 
 const result  = document.querySelector(".result");
 
-//Event listener
+//Event listener for validation
 email.addEventListener("keyup", () =>{
     //Each time the user types we check if the form are valid, thanks to "input" in the event listener
    if(email.validity.valid){
@@ -15,8 +15,7 @@ email.addEventListener("keyup", () =>{
     
        emailError.classList.remove("error");
        emailError.classList.add("success");
-       emailError.textContent = "This email is valid!";
-
+       emailError.textContent = "Valid!";
        //If the email is not valid we do the showError function
    }else{
        showError();
@@ -33,17 +32,14 @@ form.addEventListener("submit", (e) => {
         e.preventDefault();
         result.classList.add("success2");
         result.textContent = "Success! We will read your message as fast we can.";
+        form.reset();
     }
 });
 
 //Shows the differecnt types of errors
 function showError(){
-    if(email.validity.valueMissing){
-        emailError.textContent = "You need to enter an email address."
-    }else if(email.validity.typeMismatch){
-        emailError.textContent = "This is not valid"
-    }else if(email.validity.tooShort){
-        emailError.textContent = `Email should be atleast ${email.minLength} characters long.`
+    if(email.validity.typeMismatch){
+        emailError.textContent = "Not valid"
     }
 
     emailError.className = "error active"
