@@ -785,7 +785,7 @@ footer{
         border-radius: 2px;
     }
 
-    .contact-form textarea:hover{
+    .style:hover, .contact-form textarea:hover{
         padding-right: 0px;
         transition: none;
     }
@@ -800,7 +800,6 @@ footer{
         width: 90px;
         box-sizing: border-box;
     }
-
 
     /* about.html page */
     .welcome{
