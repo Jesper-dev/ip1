@@ -464,11 +464,11 @@ footer{
 }
 
 .not-valid{
-    border: 1px solid red;
+    border: 2px solid red !important;
 }
 
 .valid{
-    border: 1px solid green;
+    border: 2px solid green !important; 
 }
 
 /* Style for success message */
@@ -513,10 +513,7 @@ footer{
     background-color: #900;
     box-sizing: border-box;
     border: 1px solid black;
-}
-
-.active{
-    padding: 0.3em;
+    left: 155px;
 }
 
 /*=============================================
