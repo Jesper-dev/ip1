@@ -463,6 +463,13 @@ footer{
     100%{top:0em;}
 }
 
+.not-valid{
+    border: 1px solid red;
+}
+
+.valid{
+    border: 1px solid green;
+}
 
 /* Style for success message */
 .success{
@@ -470,7 +477,7 @@ footer{
     padding: 0;
     font-size: 15px;
     color: white;
-    background-color: rgb(0, 153, 8);
+    background-color:green;
     border-radius: 2px;
     box-sizing: border-box;
 }
