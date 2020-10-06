@@ -1,81 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shampoo Corp - Contact</title>
-    <meta name="description" content="A project created by Jesper Pettersson.">
-    <!-- Links incoming -->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a71ac1579c.js" crossorigin="anonymous"></script>
-    <script src="valid.js" defer></script>
-    <script src="main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shampoo Corp - Contact</title>
+  <meta name="description" content="A project created by Jesper Pettersson.">
+  <!-- Links incoming -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a71ac1579c.js" crossorigin="anonymous"></script>
+  <script src="valid.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
+
 <body>
-    <nav>   
-        <ul class="main-ul">
-            <li><a class="link" href="index.html">Home</a></li>
-            <li><a class="link" href="about.html">About</a></li>
-            <li><a class="link active current-link" href="#contact">Contact</a></li>
-        </ul>    
-    </nav>
+  <nav>
+    <ul class="main-ul">
+      <li><a class="link" href="index.html">Home</a></li>
+      <li><a class="link" href="about.html">About</a></li>
+      <li><a class="link active current-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<main>
-      <form class="contact-form">
-          <ul>
-            <li>
-              <h3>Conact Us!</h3>
-            </li>
-            <li>
-              <label for="name">Name:</label>
-              <input class="style" type="text" id="name" placeholder="John Doe">
-              <span class="nameErr"></span>
-            </li> 
-  
-            <li>
-              <label for="email">Email:</label>
-              <input class="style" type="email" id="email" placeholder="john-doe@example.com">
-              <span class="emailErr"></span>
-            </li>
-  
-            <li>
-              <label for="msg">Message:</label>
-              <textarea name="msg" id="msg" cols="40" rows="5" placeholder="Write your message here..."></textarea>
-            </li>
-             
-            <li>
-              <input type="submit" class="submit bouncy" value="submit">
-            </li>
-          </ul>
+  <main>
+    <form class="contact-form">
+      <ul>
+        <li>
+          <h3>Conact Us!</h3>
+        </li>
+        <li>
+          <!-- I dont know if i used "aria-live" correctly but you should use it when something changes or when a user types something -->
+          <!-- So i think i used it correctly -->
+          <label for="name">Name:</label>
+          <input class="style" type="text" id="name" placeholder="John Doe" aria-live="polite">
+          <span class="nameErr"></span>
+        </li>
+
+        <li>
+          <label for="email">Email:</label>
+          <input class="style" type="email" id="email" placeholder="john-doe@example.com" aria-live="polite">
+          <span class="emailErr"></span>
+        </li>
+
+        <li>
+          <label for="msg">Message:</label>
+          <textarea name="msg" id="msg" cols="40" rows="5" placeholder="Write your message here..."
+            aria-live="polite"></textarea>
+        </li>
+
+        <li>
+          <input type="submit" class="submit bouncy" value="submit">
+        </li>
+      </ul>
 
 
-            <span class="result"></span>
-      </form> 
+      <span class="result"></span>
+    </form>
 
-</main>
-    
-<footer>
-  <div class="footer-wrapper">
+  </main>
+
+  <footer>
+    <div class="footer-wrapper">
       <div class="footer-first">
-          <h3>Shampoo Corp</h3>
-          <div class="footer-first-links">
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="contact.html">Contact</a>
-          </div>               
+        <h3>Shampoo Corp</h3>
+        <div class="footer-first-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
       <div class="footer-second">
-          <i class="far fa-envelope"><a href="mailto:shampoocorp@gmail.com">shampoocorp@gmail.com</a></i>
-          <p><i class="fas fa-phone"></i>072 123 456 78</p>
+        <i class="far fa-envelope"><a href="mailto:shampoocorp@gmail.com">shampoocorp@gmail.com</a></i>
+        <p><i class="fas fa-phone"></i>072 123 456 78</p>
       </div>
       <div class="footer-third">
-          <h3>About us</h3>
-          <p>Our goal is to make everyones hair smell better than ever. We hope you will enjoy our product.</p>                
+        <h3>About us</h3>
+        <p>Our goal is to make everyones hair smell better than ever. We hope you will enjoy our product.</p>
       </div>
 
-  </div>
+    </div>
 
-</footer>
+  </footer>
 </body>
+
 </html>
