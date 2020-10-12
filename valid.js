@@ -42,13 +42,21 @@ function showSuccessEmail() {
 }
 function showResultError() {
     result.classList.remove("success2");
+    result.classList.remove("hide");
     result.classList.add("error2");
     result.textContent = "Something is wrong, cannot send...";
+    setTimeout(() => {
+        result.classList.add("hide");
+    }, 3000);
 }
 function showResultSuccess() {
     result.classList.remove("error2");
+    result.classList.remove("hide");
     result.classList.add("success2");
     result.textContent = "Success, message sent";
+    setTimeout(() => {
+        result.classList.add("hide");
+    }, 3000);
 }
 
 //*This function reset everthing so the form is the same way it where before

@@ -471,6 +471,10 @@ footer{
     border: 2px solid green !important; 
 }
 
+.hide{
+    display: none;
+}
+
 /* Style for success message */
 .success{
     width  : 100%;
