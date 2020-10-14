@@ -45,6 +45,7 @@ function showResultError() {
     result.classList.remove("hide");
     result.classList.add("error2");
     result.textContent = "Something is wrong, cannot send...";
+    //*Result will dissapear after 3 second
     setTimeout(() => {
         result.classList.add("hide");
     }, 3000);
@@ -54,6 +55,7 @@ function showResultSuccess() {
     result.classList.remove("hide");
     result.classList.add("success2");
     result.textContent = "Success, message sent";
+    //*Result will dissapear after 3 second
     setTimeout(() => {
         result.classList.add("hide");
     }, 3000);
@@ -71,9 +73,9 @@ function resetData() {
 
 
 
-//********************
-//*Form validation
-//**********************
+//*************************
+//****FORM VALIDATION *****
+//*************************
 const form = document.querySelector(".contact-form");
 
 //* Grab name and email and the inputs fields
@@ -86,7 +88,7 @@ const emailErr = document.querySelector(".emailErr")
 const result = document.querySelector(".result");
 
 //* Each time we type this eventlistener will fire
-form.addEventListener("keyup", e => {
+form.addEventListener("keyup", () => {
     //!Regex pattern
     //TODO: I use regex to see if name contains anything that a name cant contain, like ?, * or any number.
     const patternName = /[0-9]|[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/|#]/;

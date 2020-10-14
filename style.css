@@ -93,7 +93,7 @@ nav{
 /* To change current link, add some JS magic ;) */
 .current-link{
     color: #000000; 
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     text-decoration: underline;
 }
@@ -103,6 +103,7 @@ nav{
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: underline;
+    transition: font-size 2s;
 }
 
 /*=============================================
@@ -121,12 +122,11 @@ nav{
 .bottle{
     max-height: 387px;
     max-width: 750px;
-
-    animation: fadeIn ease 2s;
+    animation: fadeIn ease-in-out 2s; /* ease-in-out gives the animation slow start and slow end */
 }
 
 
-/* Created the animation for fade in */
+/* Animation for fade in */
 @keyframes fadeIn {
     0% {
       opacity:0;
@@ -141,7 +141,7 @@ nav{
     max-width: 30%;
     padding: 10px;
     font-size: 20px;
-    animation: fadeIn ease 2s;
+    animation: fadeIn ease-in-out 2s;
 }
 
 
