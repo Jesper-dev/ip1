@@ -422,6 +422,7 @@ footer{
     resize: none;
 }
 
+/* When you hover over a text field it becomes longer */
 .style:hover {
     background: #fff; 
     border: 1px solid #555; 
@@ -431,6 +432,7 @@ footer{
     transition: padding .50s;
 }
 
+/* When you click on a text field it stays long */
 .style:focus{
     padding-right: 70px;
 }
