@@ -419,15 +419,20 @@ footer{
     border: 1px solid #aaa;
     box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
     border-radius: 2px;
+    resize: none;
 }
 
-.style:hover, .contact-form textarea:hover {
+.style:hover {
     background: #fff; 
     border: 1px solid #555; 
     box-shadow: 0 0 3px #aaa; 
 
     padding-right: 70px;
     transition: padding .50s;
+}
+
+.style:focus{
+    padding-right: 70px;
 }
 
 /* style for the button */
